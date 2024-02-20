@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Roboto-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Roboto-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Roboto-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Rowdies-Regular.woff2);
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-10px, 20px);
+  }
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center top;
+  padding: 0;
+}
+
+.container {
+  /*overflow-x: hidden;*/
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+}
+
+.header__container {
+  display: flex;
+  padding: 20px 20px 0;
+}
+
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: #181817;
+}
+.link:hover {
+  color: #ff9f0e;
+  font-weight: 700;
+}
+
+.header__menu {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.header__button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9f0e;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.header__button:hover {
+  background-color: #fcb62a;
+  color: #fffaf3;
+}
+
+/* HERO SECTIONS  */
+
+.hero-section {
+  position: relative;
+  background-image: url(../images/hero-bone.jpg);
+  height: 808px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: cover; */
+}
+.hero-section__container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.hero-section__title {
+  font-family: "Rowdies", sans-serif;
+  font-size: 72px;
+  margin-top: 180px;
+}
+
+.hero-section__title-opis {
+  font-size: 22px;
+  padding-top: 40px;
+}
+
+.hero-section__dog-photo {
+  margin-top: 210px;
+  background-repeat: no-repeat;
+}
+
+.hero-section__button {
+  /* position: absolute; */
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9f0e;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.hero-section__button:hover {
+  background-color: #fcb62a;
+  color: #fffaf3;
+}
+
+.dog {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+}
+.tax-dog {
+  right: 960px;
+  top: 180px;
+}
+.bw-gog {
+  left: 1100px;
+  bottom: 260px;
+}
+.w-dog {
+  right: 500px;
+  top: 280px;
+}
+
+.orange-lap {
+  position: absolute;
+  fill: #fcb62a;
+  left: 1160px;
+  top: 660px;
+  animation: moveDown 2s infinite alternate;
+}
+.red-lap {
+  position: absolute;
+  fill: #ff6e9f;
+  right: 1100px;
+  top: 260px;
+  animation: moveRight 2s infinite alternate;
+}
+.sir-lap {
+  position: absolute;
+  fill: #d9a6ff;
+  right: 490px;
+  top: 400px;
+  animation: moveUp 2s infinite alternate;
+}
+
+/* LESS TALK SECTIONS  */
+
+.less-talk__container {
+  display: flex;
+  padding-top: 60px;
+  gap: 40px;
+  margin: 0;
+}
+
+.less-talk__left {
+  display: flex;
+}
+
+.less-talk__dog {
+  position: absolute;
+  top: 1060px;
+  border: 0;
+}
+
+.less-lap1 {
+  position: absolute;
+  fill: #839aa9;
+  left: 560px;
+  top: 1280px;
+}
+
+.less-lap2 {
+  position: absolute;
+  fill: #839aa9;
+  top: 1040px;
+  left: 680px;
+}
+
+.less-lap3 {
+  position: absolute;
+  fill: #839aa9;
+  top: 1220px;
+  left: 920px;
+}
+
+.less-talk__right {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 56px;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.less-talk__button {
+  position: absolute;
+  top: 400px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9f0e;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.less-talk__button:hover {
+  background-color: #fcb62a;
+  color: #fffaf3;
+}
