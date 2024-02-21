@@ -6,21 +6,21 @@
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
   src: url(../fonts/Roboto-Medium.woff2);
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
   src: url(../fonts/Roboto-Bold.woff2);
 }
 
 @font-face {
-  font-family: "Rowdies", sans-serif;
+  font-family: "Rowdies";
   font-weight: 400;
   font-style: normal;
   src: url(../fonts/Rowdies-Regular.woff2);
@@ -143,7 +143,8 @@ body {
 
 .hero-section__title-opis {
   font-size: 22px;
-  padding-top: 40px;
+  max-width: 500px;
+  font-family: sans-serif;
 }
 
 .hero-section__dog-photo {
@@ -167,6 +168,10 @@ body {
   color: #fffaf3;
 }
 
+.hero-section__small-dog {
+  position: relative;
+}
+
 .dog {
   width: 48px;
   height: 48px;
@@ -174,37 +179,37 @@ body {
   position: absolute;
 }
 .tax-dog {
-  right: 960px;
-  top: 180px;
+  bottom: 490px;
+  left: 60px;
 }
 .bw-gog {
-  left: 1100px;
-  bottom: 260px;
+  bottom: 180px;
+  left: -140px;
 }
 .w-dog {
-  right: 500px;
-  top: 280px;
+  right: -40px;
+  bottom: 420px;
 }
 
 .orange-lap {
   position: absolute;
+  left: -120px;
+  bottom: 60px;
   fill: #fcb62a;
-  left: 1160px;
-  top: 660px;
   animation: moveDown 2s infinite alternate;
 }
 .red-lap {
   position: absolute;
+  right: -80px;
+  bottom: 290px;
   fill: #ff6e9f;
-  right: 1100px;
-  top: 260px;
   animation: moveRight 2s infinite alternate;
 }
 .sir-lap {
   position: absolute;
+  bottom: 440px;
+  left: -30px;
   fill: #d9a6ff;
-  right: 490px;
-  top: 400px;
   animation: moveUp 2s infinite alternate;
 }
 
@@ -220,6 +225,9 @@ body {
 .less-talk__left {
   display: flex;
 }
+.less-talk__laps {
+  position: relative;
+}
 
 .less-talk__dog {
   position: absolute;
@@ -230,22 +238,35 @@ body {
 .less-lap1 {
   position: absolute;
   fill: #839aa9;
-  left: 560px;
-  top: 1280px;
+  right: 390px;
+  top: 340px;
 }
 
 .less-lap2 {
   position: absolute;
   fill: #839aa9;
-  top: 1040px;
-  left: 680px;
+  right: 280px;
+  top: 60px;
 }
 
 .less-lap3 {
   position: absolute;
   fill: #839aa9;
-  top: 1220px;
-  left: 920px;
+  top: 260px;
+  left: -80px;
+}
+
+.less-talk__video-button {
+  position: absolute;
+  left: -200px;
+  top: 40px;
+  width: 162px;
+  height: 124px;
+  background-repeat: no-repeat;
+  background-image: url(../images/video.png);
+  background-color: transparent;
+  border: 0;
+  animation: moveUp 1s infinite alternate;
 }
 
 .less-talk__right {
@@ -258,9 +279,10 @@ body {
   font-size: 56px;
 }
 
-.text {
+.less-talk-text {
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .less-talk__button {
