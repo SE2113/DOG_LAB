@@ -153,7 +153,6 @@ body {
 }
 
 .hero-section__button {
-  /* position: absolute; */
   width: 150px;
   height: 50px;
   border: none;
@@ -235,21 +234,21 @@ body {
   border: 0;
 }
 
-.less-lap1 {
+.lless-talk__lap1 {
   position: absolute;
   fill: #839aa9;
   right: 390px;
   top: 340px;
 }
 
-.less-lap2 {
+.less-talk__lap2 {
   position: absolute;
   fill: #839aa9;
   right: 280px;
   top: 60px;
 }
 
-.less-lap3 {
+.less-talk__lap3 {
   position: absolute;
   fill: #839aa9;
   top: 260px;
@@ -276,6 +275,8 @@ body {
 }
 
 .section-title {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
   font-size: 56px;
 }
 
@@ -300,4 +301,90 @@ body {
 .less-talk__button:hover {
   background-color: #fcb62a;
   color: #fffaf3;
+}
+
+/* CATEGORY SECTION */
+
+.category-section {
+  padding-top: 32px;
+}
+
+.category-section__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.category-section__catigory-title {
+  text-align: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  font-size: 56px;
+}
+
+.category-section__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.category-section__card {
+  display: flex;
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.category-section__item {
+  list-style: none;
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
+  box-shadow: 0px 4px 4px 0px rgba(24, 24, 23, 0.05);
+  cursor: pointer;
+}
+
+.category-section__link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #ff9f0e;
+}
+
+.category-section__button {
+  position: relative;
+}
+
+.category-section__but {
+  color: #ff9f0e;
+  text-decoration: none;
+  letter-spacing: 0.9px;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.category-section__but::after {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40px;
+  height: 16px;
+  background-image: url(../images/arrow1.png);
+  content: "";
+  transform: translate(20%, 25%);
+}
+
+/* CUSTUMER SECTION */
+
+.customer__title {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  font-size: 56px;
 }
