@@ -282,8 +282,6 @@ body {
 }
 
 .less-talk__right {
-  display: flex;
-  position: relative;
   margin-top: 50px;
 }
 
@@ -300,8 +298,7 @@ body {
 }
 
 .less-talk__button {
-  position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   left: 0;
   width: 150px;
   height: 50px;
@@ -410,6 +407,16 @@ body {
   gap: 24px;
 }
 
+.customer-section__slider {
+  margin: 0;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -428,7 +435,7 @@ body {
   }
 }
 
-.carusel-button {
+.carousel-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,12 +450,12 @@ body {
   fill: white;
 }
 
-.carusel-button:hover {
+.carousel-button:hover {
   background-color: #ff9f0e;
   fill: white;
 }
 
-.carusel-button.next {
+.carousel-button.next {
   transform: rotate(180deg);
 }
 
@@ -470,7 +477,7 @@ body {
 
 .customer-card {
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 .customer-section__card-image {
   z-index: 1;
@@ -551,7 +558,7 @@ body {
   gap: 24px;
 }
 
-.imput__control {
+.input__control {
   width: 592px;
   height: 40px;
   border: 1px solid orange;
@@ -561,10 +568,10 @@ body {
   color: #ff9f0e;
   border-radius: 8px;
 }
-.imput__control::placeholder {
+.input__control::placeholder {
   color: #ff9f0e;
 }
-.imput__control:focus {
+.input__control:focus {
   outline: none;
   border-color: #ff9f0e;
 }
