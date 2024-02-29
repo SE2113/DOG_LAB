@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog club</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/swipe.css" /> -->
   </head>
   <body>
     <header>
@@ -103,9 +108,11 @@
                 physically
               </p>
             </h3>
-            <button class="less-talk__button" type="button">
-              Explorer more
-            </button>
+            <div class="less-talk__button-cont">
+              <button class="less-talk__button" type="button">
+                Explorer more
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -162,194 +169,338 @@
         </div>
       </div>
     </section>
-    <section class="customer-section">
+    <section class="customer-section" id="customer-section">
       <div class="container">
-        <h3 class="customer__title">Happy customer</h3>
+        <h2 class="customer__title">Happy customer</h2>
         <div class="customer__container">
-          <!-- <button
-            class="format-section__button carusel-button prev"
+          <button
+            class="customer-section__button carusel-button prev"
             type="button"
           >
-            <svg width="44" height="44">
-              <use href="./images/icons.svg#icon-Arrow3"></use>
+            <svg>
+              <use href="./images/icon.svg#icon-arrowr"></use>
             </svg>
-          </button> -->
-          <div class="customer-section__swiper-container">
+          </button>
+          <div class="customer-section_slider swiper-container">
             <ul class="swiper-wallpers">
               <li class="customer-section__list swiper-slide">
-                <article class="customer-section__card">
+                <article class="customer-card">
                   <img
                     class="customer-section__card-image"
                     src="./images/christin.jpg"
                     alt="Man with a dog"
                   />
+                  <div class="customer-section__card-info">
+                    <h3 class="customer-section__card-title">Christin & Tom</h3>
+                    <div class="customer-section__card-text">
+                      <p>Love the overall workout experience!</p>
+                    </div>
+                    <div class="customer-section__card-bones">
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <p class="customer-section__card-ocenka">5/5</p>
+                    </div>
+                  </div>
                 </article>
-                <div class="customer-section__card-info">
-                  <h3 class="customer-section__card-title">Christin & Tom</h3>
-                  <div class="customer-section__card-text">
-                    <p>Love the overall workout experience!</p>
-                  </div>
-                  <div class="customer-section__card-bones">
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <p class="customer-section__card-ocenka">5/5</p>
-                  </div>
-                </div>
               </li>
               <li class="customer-section__list swiper-slide">
-                <article class="customer-section__card">
+                <article class="customer-card">
                   <img
                     class="customer-section__card-image"
                     src="./images/anna.jpg"
                     alt="Women with a dog"
                   />
+
+                  <div class="customer-section__card-info">
+                    <h3 class="customer-section__card-title">Anna & Tobby</h3>
+                    <div class="customer-section__card-text">
+                      <p>Amazing Products & Delivery on time.</p>
+                    </div>
+                    <div class="customer-section__card-bones">
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone-white"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <p class="customer-section__card-ocenka">4/5</p>
+                    </div>
+                  </div>
                 </article>
-                <div class="customer-section__card-info">
-                  <h3 class="customer-section__card-title">Anna & Tobby</h3>
-                  <div class="customer-section__card-text">
-                    <p>Amazing Products & Delivery on time.</p>
-                  </div>
-                  <div class="customer-section__card-bones">
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone-white"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <p class="customer-section__card-ocenka">4/5</p>
-                  </div>
-                </div>
               </li>
               <li class="customer-section__list swiper-slide">
-                <article class="customer-section__card">
+                <article class="customer-card">
                   <img
                     class="customer-section__card-image"
                     src="./images/sindy.jpg"
                     alt="Women2 with a dog"
                   />
+
+                  <div class="customer-section__card-info">
+                    <h3 class="customer-section__card-title">Sindy & Kitch</h3>
+                    <div class="customer-section__card-text">
+                      <p>Great job with the trainer!</p>
+                    </div>
+                    <div class="customer-section__card-bones">
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <p class="customer-section__card-ocenka">5/5</p>
+                    </div>
+                  </div>
                 </article>
-                <div class="customer-section__card-info">
-                  <h3 class="customer-section__card-title">Sindy & Kitch</h3>
-                  <div class="customer-section__card-text">
-                    <p class="customer-section__card-p">
-                      Great job with the trainer!
-                    </p>
-                  </div>
-                  <div class="customer-section__card-bones">
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <svg
-                      class="customer-section__card-bones-bone"
-                      width="32"
-                      height="14"
-                    >
-                      <use href="./images/icon.svg#icon-bony"></use>
-                    </svg>
-                    <p class="customer-section__card-ocenka">5/5</p>
-                  </div>
-                </div>
               </li>
+              <!-- <li class="customer-section__list swiper-slide">
+                <article class="customer-card">
+                  <img
+                    class="customer-section__card-image"
+                    src="./images/sindy.jpg"
+                    alt="Women2 with a dog"
+                  />
+
+                  <div class="customer-section__card-info">
+                    <h3 class="customer-section__card-title">Sindy & Kitch</h3>
+                    <div class="customer-section__card-text">
+                      <p>Great job with the trainer!</p>
+                    </div>
+                    <div class="customer-section__card-bones">
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <svg
+                        class="customer-section__card-bones-bone"
+                        width="32"
+                        height="14"
+                      >
+                        <use href="./images/icon.svg#icon-bony"></use>
+                      </svg>
+                      <p class="customer-section__card-ocenka">5/5</p>
+                    </div>
+                  </div>
+                </article>
+              </li> -->
             </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+            </div>
           </div>
-          <!-- <button
-            class="format-section__button carusel-button next"
+          <button
+            class="customer-section__button carusel-button next"
             type="button"
           >
-            <svg width="44" height="44">
-              <use href="./images/icons.svg#icon-Arrow3"></use>
+            <svg>
+              <use href="./images/icon.svg#icon-arrowr"></use>
             </svg>
-          </button> -->
+          </button>
         </div>
       </div>
     </section>
-    <script src="./js/formats-slider.js"></script>
+    <section class="contact-section" id="contact-section">
+      <div class="container">
+        <div class="contact-section__title">
+          <h3>Our experts will take <br />care of your friend</h3>
+        </div>
+        <div class="contact-section__container">
+          <form name="contact-form" autocomplete="off">
+            <div class="contact-section__form-field imput">
+              <label class="imput__label visualy-hidden" for="user-name"
+                >Youre name</label
+              >
+              <input
+                class="imput__control"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Youre name"
+                required
+              />
+            </div>
+
+            <div class="contact-section__form-field imput">
+              <label class="imput__label visualy-hidden" for="name-pet"
+                >Pet name</label
+              >
+              <input
+                class="imput__control"
+                type="text"
+                name="name-pet"
+                id="pet"
+                placeholder="Pet name"
+                required
+              />
+            </div>
+
+            <div class="contact-section__form-field imput">
+              <label class="imput__label visualy-hidden" for="user-tel"
+                >Youre phone</label
+              >
+              <input
+                class="imput__control"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Yore phone"
+                required
+              />
+            </div>
+            <div class="contact-section__form-field imput">
+              <label class="imput__label visualy-hidden" for="user-email"
+                >Youre email</label
+              >
+              <input
+                class="imput__control"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Youre email"
+                required
+              />
+            </div>
+            <button class="contact-section__button" type="submit">
+              Contact us
+            </button>
+            <div class="agree-politic">
+              <input
+                type="checkbox"
+                name="agree-politica"
+                id="agree-politic"
+                class="agree-politic_checkbox checkbox-input visualy-hidden"
+                required
+              />
+              <label class="checkbox-label" for="agree-politic"></label>
+              <p class="form-terms">
+                <a class="form-terms__link" href="#"
+                  >I agree to the privacy policy
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/customer-slider.js"></script>
   </body>
 </html>

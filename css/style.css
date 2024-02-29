@@ -51,6 +51,19 @@
   }
 }
 
+.visualy-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.is-scroll-disabled {
+  overflow: hidden;
+}
+
 body {
   font-size: 18px;
   font-weight: 400;
@@ -281,14 +294,15 @@ body {
 }
 
 .less-talk-text {
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
-  font-weight: 400;
   line-height: 1.5;
 }
 
 .less-talk__button {
   position: absolute;
-  top: 400px;
+  bottom: 60px;
+  left: 0;
   width: 150px;
   height: 50px;
   border: none;
@@ -389,37 +403,62 @@ body {
   font-size: 56px;
 }
 
-/* FORMAT SECtION */
+.customer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
 
-/* .carusel-button {
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+}
+.pagination__button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #839aa9;
+  border-radius: 50%;
+
+  --active {
+    background-color: #ff9f0e;
+  }
+}
+
+.carusel-button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
-  padding: 0;
+  padding: 14px;
   height: 44px;
   border-radius: 50%;
   flex-shrink: 0;
-  background-color: transparent;
+  background-color: #839aa9;
   border: none;
   cursor: pointer;
-  fill: #839aa9;
+  fill: white;
+}
 
-  .carusel-button.next {
-    transform: rotate(180deg);
-  }
+.carusel-button:hover {
+  background-color: #ff9f0e;
+  fill: white;
+}
 
-  carusel-button:hover {
-    background-color: #839aa9;
-    fill: #ff9f0e;
-  }
-} */
+.carusel-button.next {
+  transform: rotate(180deg);
+}
 
 .customer-section {
   display: flex;
 }
+
 .swiper-wallpers {
   justify-content: center;
+  padding: 0;
   display: flex;
   gap: 16px;
 }
@@ -429,6 +468,10 @@ body {
   list-style: none;
 }
 
+.customer-card {
+  overflow: hidden;
+  transition: transform 0.3s;
+}
 .customer-section__card-image {
   z-index: 1;
   border-radius: 24px;
@@ -465,10 +508,6 @@ body {
   color: white;
 }
 
-.customer-section__card-p {
-  margin: 0;
-}
-
 .customer-section__card-bones {
   display: flex;
   gap: 8px;
@@ -489,4 +528,109 @@ body {
   margin: 0 0 0 44px;
   color: #ff9f0e;
   font-size: 16px;
+}
+
+/* EXPERT SECTION */
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section__title {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  font-size: 56px;
+}
+
+.contact-section__container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.imput__control {
+  width: 592px;
+  height: 40px;
+  border: 1px solid orange;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+  color: #ff9f0e;
+  border-radius: 8px;
+}
+.imput__control::placeholder {
+  color: #ff9f0e;
+}
+.imput__control:focus {
+  outline: none;
+  border-color: #ff9f0e;
+}
+
+.contact-section__form-field {
+  padding-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section__button {
+  width: 150px;
+  height: 50px;
+  margin: 0 220px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9f0e;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-section__button:hover {
+  background-color: #fcb62a;
+  color: #fffaf3;
+}
+
+.form-terms {
+  max-width: 220px;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.form-terms__link {
+  color: #839aa9;
+  text-underline-offset: 2px;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+.agree-politic_checkbox:checked + .checkbox-label::before {
+  background-image: url(../images/cheking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px #839aa9 solid;
+}
+.checkbox {
+  position: relative;
+}
+.checkbox-label {
+  padding-left: 2px;
+}
+.checkbox-label::before {
+  position: absolute;
+  transform: translate(190px, 38px);
+  width: 18px;
+  height: 18px;
+  border: 2px #839aa9 solid;
+  border-radius: 4px;
+  content: "";
 }
