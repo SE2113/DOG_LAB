@@ -1,13 +1,13 @@
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 0,
   breakpoints: {
     768: {
       slidesPerView: 2,
     },
-    1200: {
-      slidesPerView: 3,
+    1280: {
+      slidesPerView: 2,
     },
   },
   pagination: {
