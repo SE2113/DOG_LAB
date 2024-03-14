@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
     },
     1280: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
   },
   pagination: {
