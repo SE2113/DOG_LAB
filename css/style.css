@@ -51,6 +51,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visualy-hidden {
   position: absolute;
   left: -10000px;
@@ -78,7 +82,7 @@ body {
 .container {
   /*overflow-x: hidden;*/
   width: 100%;
-  max-width: 1440px;
+  max-width: 1278px;
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
@@ -420,17 +424,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
 }
 
 .customer-section__container {
   margin: 0;
   width: 100%;
   overflow: hidden;
-}
-.swiper {
-  width: 600px;
-  height: 300px;
 }
 
 .pagination {
@@ -482,13 +481,6 @@ ul {
 
 .customer-section {
   display: flex;
-}
-
-.swiper-wrapper {
-  justify-content: center;
-  padding: 0;
-  display: flex;
-  gap: 16px;
 }
 
 .customer-section__list {
@@ -562,6 +554,10 @@ ul {
 .customer-card__bones-bone-white {
   z-index: 2;
   fill: white;
+}
+
+.customer-section__button {
+  margin-right: 24px;
 }
 
 .pagination {
@@ -807,18 +803,21 @@ ul {
   color: #fffaf3;
 }
 
+.checkbox {
+  position: relative;
+}
+
 .checkbox-input {
   appearance: none;
 }
+
 .footer-agree-politic__checkbox:checked + .footer-checkbox-label::before {
   background-image: url(../images/cheking.png);
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px #839aa9 solid;
 }
-.checkbox {
-  position: relative;
-}
+
 .footer-checkbox-label {
   padding-left: 2px;
 }
@@ -907,4 +906,24 @@ ul {
   justify-content: center;
   color: #839aa9;
   font-size: 18px;
+}
+
+.modal-agree-politic__checkbox:checked + .modal-checkbox-label::before {
+  background-image: url(../images/cheking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px #839aa9 solid;
+}
+
+.modal-checkbox-label {
+  padding-left: 2px;
+}
+.modal-checkbox-label::before {
+  position: absolute;
+  transform: translate(196px, 38px);
+  width: 18px;
+  height: 18px;
+  border: 2px #839aa9 solid;
+  border-radius: 4px;
+  content: "";
 }
