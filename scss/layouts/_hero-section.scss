@@ -1,0 +1,81 @@
+.hero-section {
+    position: relative;
+    background-image: url(../images/hero-bone.jpg);
+    height: 808px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-size: cover; */
+}
+
+.hero-section__container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.hero-section__title {
+    font-family: "Rowdies", sans-serif;
+    font-size: 72px;
+    margin-top: 180px;
+}
+
+.hero-section__title-opis {
+    font-size: 22px;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.hero-section__dog-photo {
+    margin-top: 210px;
+    background-repeat: no-repeat;
+}
+
+.hero-section__small-dog {
+    position: relative;
+}
+
+.dog {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.tax-dog {
+    bottom: 490px;
+    left: 60px;
+}
+
+.bw-gog {
+    bottom: 180px;
+    left: -140px;
+}
+
+.w-dog {
+    right: -40px;
+    bottom: 420px;
+}
+
+.orange-lap {
+    position: absolute;
+    left: -120px;
+    bottom: 60px;
+    fill: var(--color-brand-light);
+    animation: moveDown 2s infinite alternate;
+}
+
+.red-lap {
+    position: absolute;
+    right: -80px;
+    bottom: 290px;
+    fill: #ff6e9f;
+    animation: moveRight 2s infinite alternate;
+}
+
+.sir-lap {
+    position: absolute;
+    bottom: 440px;
+    left: -30px;
+    fill: #d9a6ff;
+    animation: moveUp 2s infinite alternate;
+}

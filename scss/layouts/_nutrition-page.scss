@@ -1,0 +1,104 @@
+.nutrition-page__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrition-page__title {
+    color: var(--color-brand);
+    font-size: 56px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+}
+
+.nutrition-page__sorting {
+    display: flex;
+    align-items: center;
+}
+
+.nutrition-page__sorting-name {
+    color: var(--color-brand);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    padding-right: 18px;
+}
+
+
+
+.nutrition-page__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nutrition-page__item {
+    flex-basis: calc((100% - 96px) / 5);
+    padding: 20px;
+}
+
+.nutrition-page__card {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    align-items: center;
+}
+
+.nutrition-page__info {
+    display: flex;
+}
+
+.nutrition-page__stars {
+    display: flex;
+    align-items: center;
+}
+
+.goods-code {
+    color: var(--color-brand-grey);
+    font-size: 12px;
+    margin: 0;
+    padding: 8px 16px 0 0;
+    white-space: nowrap;
+}
+
+.nutrition-stars__gold-star {
+    fill: var(--color-brand-light);
+    width: 16px;
+    height: 16px;
+    padding-top: 4px;
+}
+
+.nutrition-stars__grey-star {
+    fill: var(--color-brand-grey);
+    width: 16px;
+    height: 16px;
+    padding-top: 4px;
+}
+
+.nutrition-page__description {
+    padding-top: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    /* white-space: nowrap; */
+}
+
+.nutrition-page__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nutrition-page__price-now {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 24px;
+}
+
+.nutrition-page__price-before {
+    font-size: 14px;
+    margin: 0;
+    color: var(--color-brand-grey);
+    padding-top: 24px;
+}

@@ -1,0 +1,35 @@
+.header__container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 0;
+}
+
+.header__nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+.link {
+    text-decoration: none;
+    color: #181817;
+    list-style-type: none;
+}
+
+.link:hover {
+    color: var(--color-brand);
+    font-weight: 700;
+}
+
+.header__menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.corsina-icon {
+    fill: var(--color-brand);
+}

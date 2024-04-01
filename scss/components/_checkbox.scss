@@ -1,0 +1,64 @@
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox {
+    position: relative;
+}
+.checkbox-label {
+    padding-left: 2px;
+}
+.checkbox-label::before {
+    position: absolute;
+    transform: translate(150px, 38px);
+    width: 18px;
+    height: 18px;
+    border: 2px var(--color-brand-grey) solid;
+    border-radius: 4px;
+    content: "";
+}
+.agree-politic_checkbox:checked+.checkbox-label::before {
+    background-image: url(../images/cheking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px var(--color-brand-grey) solid;
+}
+
+
+.footer-checkbox-label {
+    padding-left: 2px;
+}
+.footer-checkbox-label::before {
+    position: absolute;
+    transform: translate(150px, 38px);
+    width: 18px;
+    height: 18px;
+    border: 2px var(--color-brand-grey) solid;
+    border-radius: 4px;
+    content: "";
+}
+.footer-agree-politic__checkbox:checked+.footer-checkbox-label::before {
+    background-image: url(../images/cheking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px var(--color-brand-grey) solid;
+}
+
+.modal-checkbox-label {
+    padding-left: 2px;
+}
+.modal-checkbox-label::before {
+    position: absolute;
+    transform: translate(150px, 38px);
+    width: 18px;
+    height: 18px;
+    border: 2px var(--color-brand-grey) solid;
+    border-radius: 4px;
+    content: "";
+}
+.modal-agree-politic__checkbox:checked+.modal-checkbox-label::before {
+    background-image: url(../images/cheking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px var(--color-brand-grey) solid;
+}

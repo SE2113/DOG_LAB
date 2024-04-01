@@ -1,0 +1,66 @@
+.customer-card {
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s;
+    width: 344px;
+    height: 456px;
+}
+
+.customer-card__image {
+    z-index: -1;
+    border-radius: 24px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.customer-card__info {
+    position: absolute;
+    border-radius: 0px 0px 24px 24px;
+    padding: 16px 38px 100px 38px;
+    background-color: var(--color-brand-grey);
+    transform: translate(0px, 324px);
+}
+
+.customer-card__title {
+    position: absolute;
+    transform: translate(0px, -8px);
+    z-index: 2;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.customer-card__text {
+    position: absolute;
+    z-index: 2;
+    transform: translate(0px, 12px);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.customer-card__bones {
+    display: flex;
+    gap: 8px;
+    transform: translate(0px, 80px);
+}
+
+.customer-card__bones-bone {
+    z-index: 2;
+    fill: var(--color-brand);
+}
+
+.customer-card__ocenka {
+    margin: 0 0 0 44px;
+    color: var(--color-brand);
+    font-size: 16px;
+}
+
+.customer-card__bones-bone-white {
+    z-index: 2;
+    fill: white;
+}

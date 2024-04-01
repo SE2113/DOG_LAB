@@ -1,0 +1,23 @@
+:root {
+    --color-brand: #ff9f0e;
+    --color-brand-light: #fcb62a;
+    --color-brand-grey: #839AA9;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.visualy-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.is-scroll-disabled {
+    overflow: hidden;
+}

@@ -1,0 +1,78 @@
+.less-talk {
+    padding-top: 32px;
+}
+
+.less-talk__container {
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+    margin: 0;
+}
+
+.less-talk__left {
+    display: flex;
+}
+
+.less-talk__laps {
+    position: relative;
+}
+
+.less-talk__dog {
+    position: absolute;
+    top: 1060px;
+    border: 0;
+}
+
+.less-talk__lap1 {
+    position: absolute;
+    fill: var(--color-brand-grey);
+    right: 390px;
+    top: 340px;
+}
+
+.less-talk__lap2 {
+    position: absolute;
+    fill: var(--color-brand-grey);
+    right: 280px;
+    top: 60px;
+}
+
+.less-talk__lap3 {
+    position: absolute;
+    fill: var(--color-brand-grey);
+    top: 260px;
+    left: -80px;
+}
+
+.less-talk__video-button {
+    position: absolute;
+    left: -200px;
+    top: 40px;
+    width: 162px;
+    height: 124px;
+    background-repeat: no-repeat;
+    background-image: url(../images/video.png);
+    background-color: transparent;
+    border: 0;
+    animation: moveUp 1s infinite alternate;
+}
+
+.less-talk__video-button:hover {
+    cursor: pointer;
+}
+
+.less-talk__right {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.less-talk-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}

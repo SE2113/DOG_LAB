@@ -1,0 +1,29 @@
+@keyframes moveUp {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-10px, 20px);
+    }
+}

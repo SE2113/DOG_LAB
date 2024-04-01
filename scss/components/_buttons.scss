@@ -1,0 +1,51 @@
+.button-contact ,.explorer-button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-brand);
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.button-contact:hover {
+    background-color: var(--color-brand-light);
+    color: #fffaf3;
+}
+
+.explorer-button:hover {
+    background-color: var(--color-brand-grey);
+    color: #fffaf3;
+}
+
+.sorting-btn {
+    height: 36px;
+    border: solid 0.2px var(--color-brand-grey);
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 8xp;
+}
+
+.sorting-btn:hover {
+    background-color: var(--color-brand);
+    cursor: pointer;
+    color: white;
+}
+
+.nutrition-page__button {
+    width: 94px;
+    height: 34px;
+    background-color: var(--color-brand);
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 24px 0;
+}
+
+.nutrition-page__button:hover {
+    background-color: var(--color-brand-light);
+    cursor: pointer;
+}
