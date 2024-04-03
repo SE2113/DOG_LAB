@@ -1,47 +1,52 @@
 .customer-section {
     padding-top: 96px;
-}
+    display: flex;
 
-.customer__title {
-    padding-top: 20px;
+&__title {
+    padding-top: 0px;
     text-align: center;
     font-family: "Rowdies", sans-serif;
     font-weight: 400;
     justify-content: center;
+    font-size: 36px;
+
+@media screen and (min-width: $bp-tablet) {
     font-size: 56px;
+    padding-top: 20px;
+}
 }
 
-.customer__slider {
-    display: flex;
+&__slider {
+    display: block;
     align-items: center;
     justify-content: center;
+
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
 }
 
-.customer-section__container {
+&__container {
     margin: 0;
     width: 100%;
     overflow: hidden;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.swiper-list {
+&__swiper-list {
     gap: 5px;
 }
 
-.customer-section {
-    display: flex;
-}
-
-.customer-section__list {
+&__list {
     text-decoration: none;
     list-style: none;
+    margin-left: 38px;
+
+@media screen and (min-width: $bp-tablet) {
     margin: 0;
 }
+}
 
-.customer-section__button {
+&__button {
     margin-right: 24px;
+}
 }

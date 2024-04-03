@@ -1,35 +1,79 @@
-.header__container {
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+
+&__logo {
+width: 94px;
+    @media screen and (min-width: $bp-desktop){
+  width: 172px;
+    }  
+}
+
+&__container {
     display: flex;
     gap: 20px;
     padding: 20px 20px 0;
-}
-
-.header__nav {
+        }
+&__nav {
     display: flex;
     flex-grow: 1;
 }
-
-.link {
-    text-decoration: none;
-    color: #181817;
-    list-style-type: none;
-}
-
-.link:hover {
-    color: var(--color-brand);
-    font-weight: 700;
-}
-
-.header__menu {
-    display: flex;
+&__menu {
+    display: none;
     flex-grow: 1;
     gap: 40px;
     text-align: center;
     text-decoration: none;
     list-style: none;
     padding: 0;
-}
 
-.corsina-icon {
+    @media screen and (min-width: $bp-desktop) {
+            display: flex;
+        }
+}
+&__basket {
     fill: var(--color-brand);
 }
+&__button-contact {
+    display: none;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-brand);
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 auto;
+@media screen and (min-width: $bp-desktop) {
+    display: block;
+    }
+   }
+&__button-contact:hover {
+    background-color: var(--color-brand-light);
+    color: #fffaf3;
+}
+
+ &__burger {
+     padding: 0px;
+     background-color: transparent;
+     border: none;
+     fill: var(--color-brand);
+     width: 24px;
+     height: 24px;
+    // margin-right: 28px;
+
+    @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+ }
+}
+
+
+
+
+
+
+

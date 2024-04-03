@@ -1,0 +1,34 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__control {
+    width: 392px;
+    height: 40px;
+    border: 1px solid orange;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    padding: 4px;
+    color: var(--color-brand);
+    border-radius: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+            width: 592px;
+        }
+}
+
+
+.input__control::placeholder {
+    color: var(--color-brand);
+}
+
+.input__control:focus {
+    outline: none;
+    border-color: var(--color-brand);
+}
+
+.contact-section__form-field {
+    padding-bottom: 24px;
+}

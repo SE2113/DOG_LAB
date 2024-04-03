@@ -13,36 +13,94 @@
   </head>
   <body>
     <main>
-      <header>
-        <div class="header__fixed">
-          <div class="container">
-            <div class="header__container">
-              <nav class="header__nav">
-                <a href="./index.html">
-                  <img src="./images/logo.svg" alt="Logo" />
-                </a>
-              </nav>
-              <ul class="header__menu">
-                <li><a class="link" href="#less-talk">Less talk</a></li>
-                <li>
-                  <a class="link" href="#category-section">Services category</a>
-                </li>
-                <li>
-                  <a class="link" href="#customer-section">Happy customer</a>
-                </li>
-                <li><a class="link" href="#footer-section">Contacts</a></li>
-              </ul>
-              <svg class="corsina-icon" width="40" height="40">
-                <use href="./images/icon.svg#icon-corsina"></use>
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <nav class="header__nav">
+              <a href="./index.html">
+                <img class="header__logo" src="./images/logo.svg" alt="Logo" />
+              </a>
+            </nav>
+            <ul class="header__menu">
+              <li><a class="link" href="#less-talk">Less talk</a></li>
+              <li>
+                <a class="link" href="#category-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#footer-section">Contacts</a></li>
+            </ul>
+            <svg class="header__basket" width="40" height="40">
+              <use href="./images/icon.svg#icon-corsina"></use>
+            </svg>
+            <button type="button" class="header__button-contact modal-btn-open">
+              Contact us
+            </button>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icon.svg#icon-burger"></use>
               </svg>
-              <button type="button" class="button-contact modal-btn-open">
-                Contact us
+            </button>
+            <div class="mobile-menu">
+              <a href="./index.html">
+                <img src="./images/logo.svg" alt="Logo" />
+              </a>
+              <ul class="menu">
+                <li class="list">
+                  <a class="link" href="../index.html#less-talk">Less talk</a>
+                </li>
+                <li class="list">
+                  <a class="link" href="../index.html#category-section"
+                    >Services category</a
+                  >
+                </li>
+                <li class="list">
+                  <a class="link" href="../index.html#customer-section"
+                    >Happy customer</a
+                  >
+                </li>
+                <li class="list">
+                  <a class="link" href="../index.html#footer-section"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <a
+                  class="social"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                >
+                  <svg width="38" height="38">
+                    <use href="../images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="social"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <svg width="38" height="38">
+                    <use href="../images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <img
+                  class="mobile-menu__close-icon"
+                  src="./images/close2.svg"
+                  alt="Close"
+                />
               </button>
             </div>
           </div>
         </div>
       </header>
-      <section class="hero-section" id="smart-dog">
+      <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
             <div class="hero-section__left">
@@ -53,7 +111,7 @@
               <h2 class="hero-section__title-opis">
                 Human–canine bonding is the relationship between dogs and humans
               </h2>
-              <button class="explorer-button" type="button">
+              <button class="hero-section__explorer-button" type="button">
                 Explorer more
               </button>
             </div>
@@ -63,29 +121,29 @@
                 src="./images/hero-dog.png"
                 alt="Dog photo"
               />
-              <div class="hero-section__small-dog">
+              <div class="small-dog">
                 <img
-                  class="dog tax-dog"
+                  class="small-dog__dog small-dog__tax-dog"
                   src="./images/t-dog.png"
                   alt="Tax dog"
                 />
                 <img
-                  class="dog bw-gog"
+                  class="small-dog__dog small-dog__bw-gog"
                   src="./images/uh-dog.png"
                   alt="Big white dog"
                 />
                 <img
-                  class="dog w-dog"
+                  class="small-dog__dog small-dog__w-dog"
                   src="./images/w-dog.png"
                   alt="White dog"
                 />
-                <svg class="orange-lap" width="48" height="48">
+                <svg class="small-dog__orange-lap" width="48" height="48">
                   <use href="./images/icon.svg#icon-orange-lap"></use>
                 </svg>
-                <svg class="red-lap" width="48" height="48">
+                <svg class="small-dog__red-lap" width="48" height="48">
                   <use href="./images/icon.svg#icon-red-lap"></use>
                 </svg>
-                <svg class="sir-lap" width="48" height="48">
+                <svg class="small-dog__sir-lap" width="48" height="48">
                   <use href="./images/icon.svg#icon-sir-lap"></use>
                 </svg>
               </div>
@@ -97,7 +155,11 @@
         <div class="container">
           <div class="less-talk__container">
             <div class="less-talk__left">
-              <img src="./images/background-less.png" alt="background-dog" />
+              <img
+                class="less-talk__dog-background"
+                src="./images/background-less.png"
+                alt="background-dog"
+              />
               <img
                 class="less-talk__dog"
                 src="./images/less-dog2.png"
@@ -118,10 +180,10 @@
             </div>
             <div class="less-talk__right">
               <div class="less-talk__right-writing">
-                <h3 class="section-title">
+                <h3 class="less-talk__title">
                   Less talk <br />and more walk <br />
                 </h3>
-                <p class="less-talk-text">
+                <p class="less-talk__text">
                   Sometimes our career, lifestyle, or routines can make it
                   difficult to provide your pet with the recommended amount of
                   exercise that they need. Which is why, it’s okay to use an
@@ -139,9 +201,9 @@
       <section class="category-section" id="category-section">
         <div class="container">
           <h3 class="category-section__catigory-title">Services category</h3>
-          <div class="category-section__content">
+          <div class="category-section__conteiner">
             <ul class="category-section__list">
-              <li class="category-section__item">
+              <li class="category-section__item category-section__mobile">
                 <article class="category-section__card">
                   <a class="category-section__link" href="#smart-dog">
                     <svg class="category-section__image" width="96" height="96">
@@ -164,7 +226,7 @@
                   </a>
                 </article>
               </li>
-              <li class="category-section__item">
+              <li class="category-section__item category-section__mobile">
                 <article class="category-section__card">
                   <a href="#smart-dog" class="category-section__link">
                     <svg class="category-section__image" width="96" height="96">
@@ -174,7 +236,7 @@
                   </a>
                 </article>
               </li>
-              <li class="category-section__item">
+              <li class="category-section__item category-section__mobile">
                 <article class="category-section__card">
                   <a class="category-section__link" href="#smart-dog">
                     <svg class="category-section__image" width="96" height="96">
@@ -186,22 +248,22 @@
               </li>
             </ul>
             <div class="category-section__button">
-              <a class="category-section__but" href="#">more services</a>
+              <a class="category-section__bnt" href="#">more services</a>
             </div>
           </div>
         </div>
       </section>
       <section class="customer-section" id="customer-section">
         <div class="container">
-          <h2 class="customer__title">Happy customer</h2>
-          <div class="customer__slider">
+          <h2 class="customer-section__title">Happy customer</h2>
+          <div class="customer-section__slider">
             <button class="carousel-button prev" type="button">
               <svg>
                 <use href="./images/icon.svg#icon-arrowr"></use>
               </svg>
             </button>
             <div class="customer-section__container swiper-container">
-              <ul class="swiper-wrapper swiper-list">
+              <ul class="swiper-wrapper customer-section__swiper-list">
                 <li class="customer-section__list swiper-slide">
                   <article class="customer-card">
                     <img
@@ -437,14 +499,14 @@
         </div>
       </section>
       <section class="contact-section" id="contact-section">
+        <div class="contact-section__background">
+          <img
+            class="contact-section__bone"
+            src="./images/background-contact.png"
+            alt="Background-contact"
+          />
+        </div>
         <div class="container">
-          <div class="contact-section__background">
-            <img
-              class="contact-section__bone"
-              src="./images/background-contact.png"
-              alt="Background-contact"
-            />
-          </div>
           <div class="contact-section__title">
             <h3>Our experts will take <br />care of your friend</h3>
           </div>
@@ -532,7 +594,7 @@
             <a href="./index.html">
               <img src="./images/logo.svg" alt="LOGO" />
             </a>
-            <div>
+            <div class="footer-section__social-list">
               <a
                 class="footer-section__social"
                 href="https://www.instagram.com"
@@ -553,24 +615,40 @@
               </a>
             </div>
           </div>
-          <ul class="footer-menu">
-            <li class="footer-menu__list">
-              <a class="footer-menu__link" href="#less-talk">Less talk</a>
+          <ul class="footer-section__menu">
+            <li class="list">
+              <a class="link" href="#less-talk">Less talk</a>
             </li>
-            <li class="footer-menu__list">
-              <a class="footer-menu__link" href="#category-section"
-                >Services category</a
-              >
+            <li class="list">
+              <a class="link" href="#category-section">Services category</a>
             </li>
-            <li class="footer-menu__list">
-              <a class="footer-menu__link" href="#customer-section"
-                >Happy customer</a
-              >
+            <li class="list">
+              <a class="link" href="#customer-section">Happy customer</a>
             </li>
-            <li class="footer-menu__list">
-              <a class="footer-menu__link" href="#footer-section">Contacts</a>
+            <li class="list">
+              <a class="link" href="#footer-section">Contacts</a>
             </li>
           </ul>
+          <div class="footer-section__social-list">
+            <a
+              class="footer-section__social footer-section__social-mobile"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <svg width="38" height="38">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a
+              class="footer-section__social footer-section__social-mobile"
+              href="https://www.facebook.com"
+              target="_blank"
+            >
+              <svg width="38" height="38">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
           <div class="footer-section__contact-form">
             <form class="contact-form" name="contact-form" autocomplete="off">
               <div class="contact-section__form-field input">
@@ -720,5 +798,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/customer-slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

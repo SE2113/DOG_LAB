@@ -1,9 +1,21 @@
 .contact-section {
     position: relative;
+    padding-top: 18px;
+
+@media screen and (min-width: $bp-tablet) {
     padding-top: 168px;
 }
 
-.contact-section__background::before {
+&__background {
+    position: relative;
+    display: none;
+
+@media screen and (min-width: $bp-tablet) {
+    display: block;
+}
+}
+
+&__background::before {
     content: "";
     background-image: url(../images/contactdog-befor.png);
     background-repeat: no-repeat;
@@ -14,7 +26,7 @@
     z-index: -1;
 }
 
-.contact-section__background::after {
+&__background::after {
     content: "";
     background-image: url(../images/contactdog-after.png);
     background-repeat: no-repeat;
@@ -26,59 +38,30 @@
     z-index: -1;
 }
 
-.contact-section__background {
-    position: relative;
+&__container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
-.contact-section__bone {
+&__bone {
     position: absolute;
     z-index: -2;
     width: 100%;
     box-sizing: border-box;
 }
 
-.contact-section__title {
-    padding-top: 20px;
+&__title {
+    padding-top: 0px;
     text-align: center;
     font-family: "Rowdies", sans-serif;
     font-weight: 400;
     justify-content: center;
+    font-size: 34px;
+
+@media screen and (min-width: $bp-tablet) {
     font-size: 56px;
+    padding-top: 20px;
 }
-
-.contact-section__container {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
 }
-
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.input__control {
-    width: 592px;
-    height: 40px;
-    border: 1px solid orange;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    padding: 4px;
-    color: var(--color-brand);
-    border-radius: 8px;
-}
-
-.input__control::placeholder {
-    color: var(--color-brand);
-}
-
-.input__control:focus {
-    outline: none;
-    border-color: var(--color-brand);
-}
-
-.contact-section__form-field {
-    padding-bottom: 24px;
 }

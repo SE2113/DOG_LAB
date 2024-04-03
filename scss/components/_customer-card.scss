@@ -4,9 +4,8 @@
     transition: transform 0.5s;
     width: 344px;
     height: 456px;
-}
 
-.customer-card__image {
+&__image {
     z-index: -1;
     border-radius: 24px;
     position: relative;
@@ -14,7 +13,7 @@
     height: 100%;
 }
 
-.customer-card__info {
+&__info {
     position: absolute;
     border-radius: 0px 0px 24px 24px;
     padding: 16px 38px 100px 38px;
@@ -22,7 +21,7 @@
     transform: translate(0px, 324px);
 }
 
-.customer-card__title {
+&__title {
     position: absolute;
     transform: translate(0px, -8px);
     z-index: 2;
@@ -33,7 +32,7 @@
     margin: 0;
 }
 
-.customer-card__text {
+&__text {
     position: absolute;
     z-index: 2;
     transform: translate(0px, 12px);
@@ -43,24 +42,24 @@
     color: white;
 }
 
-.customer-card__bones {
+&__bones {
     display: flex;
     gap: 8px;
     transform: translate(0px, 80px);
 }
 
-.customer-card__bones-bone {
+&__bones-bone {
     z-index: 2;
     fill: var(--color-brand);
 }
 
-.customer-card__ocenka {
+&__ocenka {
     margin: 0 0 0 44px;
     color: var(--color-brand);
     font-size: 16px;
 }
-
-.customer-card__bones-bone-white {
+&__bones-bone-white {
     z-index: 2;
     fill: white;
+}
 }

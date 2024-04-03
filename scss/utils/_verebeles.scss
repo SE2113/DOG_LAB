@@ -21,3 +21,7 @@ html {
 .is-scroll-disabled {
     overflow: hidden;
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1260px;

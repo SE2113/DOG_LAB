@@ -8,48 +8,104 @@
   </head>
   <body>
     <main>
-      <header>
-        <div class="header__fixed">
-          <div class="container">
-            <div class="header__container">
-              <nav class="header__nav">
-                <a href="../index.html">
-                  <img src="../images/logo.svg" alt="Logo" />
-                </a>
-              </nav>
-              <ul class="header__menu">
-                <li>
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <nav class="header__nav">
+              <a href="../index.html">
+                <img class="header__logo" src="../images/logo.svg" alt="Logo" />
+              </a>
+            </nav>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="../index.html#less-talk">Less talk</a>
+              </li>
+              <li>
+                <a class="link" href="../index.html#category-section"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a class="link" href="../index.html#customer-section"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a class="link" href="../index.html#footer-section">Contacts</a>
+              </li>
+            </ul>
+            <svg class="header__basket" width="40" height="40">
+              <use href="../images/icon.svg#icon-corsina"></use>
+            </svg>
+            <button type="button" class="header__button-contact modal-btn-open">
+              Contact us
+            </button>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg width="24" height="24">
+                <use href="../images/icon.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu">
+              <a href="../index.html">
+                <img src="../images/logo.svg" alt="Logo" />
+              </a>
+              <ul class="menu">
+                <li class="list">
                   <a class="link" href="../index.html#less-talk">Less talk</a>
                 </li>
-                <li>
+                <li class="list">
                   <a class="link" href="../index.html#category-section"
                     >Services category</a
                   >
                 </li>
-                <li>
+                <li class="list">
                   <a class="link" href="../index.html#customer-section"
                     >Happy customer</a
                   >
                 </li>
-                <li>
+                <li class="list">
                   <a class="link" href="../index.html#footer-section"
                     >Contacts</a
                   >
                 </li>
               </ul>
-              <svg class="corsina-icon" width="40" height="40">
-                <use href="../images/icon.svg#icon-corsina"></use>
-              </svg>
-              <button type="button" class="button-contact modal-btn-open">
-                Contact us
+              <div>
+                <a
+                  class="social"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                >
+                  <svg width="38" height="38">
+                    <use href="../images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="social"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <svg width="38" height="38">
+                    <use href="../images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <img
+                  class="mobile-menu__close-icon"
+                  src="../images/close2.svg"
+                  alt="Close"
+                />
               </button>
             </div>
           </div>
         </div>
       </header>
-      <section class="nutrition-page">
+      <section id="nutrition-page">
         <div class="container">
-          <div class="nutrition-page__top">
+          <div class="nutrition-page">
             <h2 class="nutrition-page__title">Nutrition</h2>
             <div class="nutrition-page__sorting">
               <p class="nutrition-page__sorting-name">Sorting:</p>
@@ -62,35 +118,47 @@
               <button class="sorting-btn" type="button">New ones first</button>
             </div>
           </div>
+          <div class="nutrition-page__popular-filter">
+            <svg class="nutrition-page__popular-arrows" width="18" height="24">
+              <use href="../images/icon.svg#icon-populararow1"></use>
+            </svg>
+            <svg class="nutrition-page__popular-arrows" width="18" height="24">
+              <use href="../images/icon.svg#icon-populararow2"></use>
+            </svg>
+            <p class="nutrition-page__popular">Popularity</p>
+          </div>
           <ul class="nutrition-page__list">
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food4.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 37875</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 37875
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 37875</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__grey-star">
+                  <svg class="nutrition-card__grey-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of average breeds <br />
                   Savory 3 kg (turkey and lamb)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">136.00$</p>
-                  <p class="nutrition-page__price-before">321.49$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">136.00$</p>
+                  <p class="nutrition-card__price-before">321.49$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -98,33 +166,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food2.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 34905</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 34905
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 34905</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of small breeds <br />
                   Savory 3 kg (lamb)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">140.00$</p>
-                  <p class="nutrition-page__price-before">320.43$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">140.00$</p>
+                  <p class="nutrition-card__price-before">320.43$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -132,33 +203,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food3.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00027</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00027
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00027</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 3 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">136.00$</p>
-                  <p class="nutrition-page__price-before">320.43$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">136.00$</p>
+                  <p class="nutrition-card__price-before">320.43$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -166,33 +240,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food4.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00028</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00028
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00028</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 5 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">346.00$</p>
-                  <p class="nutrition-page__price-before">450.49$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">346.00$</p>
+                  <p class="nutrition-card__price-before">450.49$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -200,33 +277,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food4.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00028</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00028
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00028</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 5 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">140.00$</p>
-                  <p class="nutrition-page__price-before">410.11$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">140.00$</p>
+                  <p class="nutrition-card__price-before">410.11$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -234,33 +314,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food2.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00028</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00028
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00028</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 5 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">136.00$</p>
-                  <p class="nutrition-page__price-before">320.00$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">136.00$</p>
+                  <p class="nutrition-card__price-before">320.00$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -268,33 +351,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food1.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00028</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00028
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00028</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 5 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">136.00$</p>
-                  <p class="nutrition-page__price-before">321.49$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">136.00$</p>
+                  <p class="nutrition-card__price-before">321.49$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -302,33 +388,36 @@
               </article>
             </li>
             <li class="nutrition-page__item">
-              <article class="nutrition-page__card">
+              <article class="nutrition-card">
                 <img src="../images/page2/dry-food4.png" alt="FOOD" />
-                <div class="nutrition-stars">
-                  <p class="goods-code">Vendor code: 00028</p>
-                  <svg class="nutrition-stars__gold-star">
+                <p class="nutrition-card__goods-code-mobile">
+                  Vendor code: 00028
+                </p>
+                <div class="nutrition-card__stars">
+                  <p class="nutrition-card__goods-code">Vendor code: 00028</p>
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
-                  <svg class="nutrition-stars__gold-star">
+                  <svg class="nutrition-card__gold-star">
                     <use href="../images/icon.svg#icon-star"></use>
                   </svg>
                 </div>
-                <p class="nutrition-page__description">
+                <p class="nutrition-card__description">
                   Dry food for dogs of all breeds <br />
                   Savory 5 kg (rabbit and duck)
                 </p>
-                <div class="nutrition-page__price">
-                  <p class="nutrition-page__price-now">346.00$</p>
-                  <p class="nutrition-page__price-before">450.49$</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-now">346.00$</p>
+                  <p class="nutrition-card__price-before">450.49$</p>
                 </div>
                 <button class="nutrition-page__button" type="button">
                   Buy
@@ -344,10 +433,10 @@
     <div class="container">
       <div class="footer-section__container">
         <div class="footer-section__logo">
-          <a href="../index.html">
+          <a href="./index.html">
             <img src="../images/logo.svg" alt="LOGO" />
           </a>
-          <div>
+          <div class="footer-section__social-list">
             <a
               class="footer-section__social"
               href="https://www.instagram.com"
@@ -368,30 +457,46 @@
             </a>
           </div>
         </div>
-        <ul class="footer-menu">
-          <li class="footer-menu__list">
-            <a class="footer-menu__link" href="../index.html#less-talk"
-              >Less talk</a
-            >
+        <ul class="footer-section__menu">
+          <li class="list">
+            <a class="link" href="../index.html#less-talk">Less talk</a>
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu__link" href="../index.html#category-section"
+          <li class="list">
+            <a class="link" href="../index.html#category-section"
               >Services category</a
             >
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu__link" href="../index.html#customer-section"
+          <li class="list">
+            <a class="link" href="../index.html#customer-section"
               >Happy customer</a
             >
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu__link" href="../index.html#footer-section"
-              >Contacts</a
-            >
+          <li class="list">
+            <a class="link" href="../index.html#footer-section">Contacts</a>
           </li>
         </ul>
+        <div class="footer-section__social-list">
+          <a
+            class="footer-section__social footer-section__social-mobile"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <svg width="38" height="38">
+              <use href="../images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a
+            class="footer-section__social footer-section__social-mobile"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <svg width="38" height="38">
+              <use href="../images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
         <div class="footer-section__contact-form">
-          <form name="contact-form" autocomplete="off">
+          <form class="contact-form" name="contact-form" autocomplete="off">
             <div class="contact-section__form-field input">
               <label class="input__label visualy-hidden" for="user-email"
                 >Youre email</label
@@ -539,4 +644,5 @@
     </div>
   </div>
   <script src="../js/modal.js"></script>
+  <script src="../js/mobile-menu.js"></script>
 </html>

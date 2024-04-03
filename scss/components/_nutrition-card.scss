@@ -1,0 +1,81 @@
+.nutrition-card {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    align-items: center;
+
+&__stars {
+        display: flex;
+        align-items: center;
+    }
+
+    &__goods-code {
+        display: none;
+        color: var(--color-brand-grey);
+        font-size: 12px;
+        margin: 0;
+        padding: 8px 16px 0 0;
+        white-space: nowrap;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: block;
+    }
+    }
+
+    &__goods-code-mobile {
+        display: block;
+        color: var(--color-brand-grey);
+        font-size: 12px;
+        margin: 0;
+        padding: 8px 16px 0 0;
+        white-space: nowrap;
+    
+    @media screen and (min-width: $bp-tablet) {
+        display: none;
+    }
+    }
+
+    &__gold-star {
+        fill: var(--color-brand-light);
+        width: 16px;
+        height: 16px;
+        padding-top: 4px;
+    }
+
+    &__grey-star {
+        fill: var(--color-brand-grey);
+        width: 16px;
+        height: 16px;
+        padding-top: 4px;
+    }
+
+    &__description {
+        padding-top: 16px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        text-align: center;
+        /* white-space: nowrap; */
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__price-now {
+        font-size: 18px;
+        margin: 0;
+        padding-top: 24px;
+    }
+
+    &__price-before {
+        font-size: 14px;
+        margin: 0;
+        color: var(--color-brand-grey);
+        padding-top: 24px;
+    }
+}
+

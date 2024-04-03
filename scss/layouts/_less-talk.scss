@@ -1,78 +1,128 @@
 .less-talk {
-    padding-top: 32px;
+    padding-top: 0px;
+
+@media screen and (min-width: $bp-tablet) {
+    padding-top: 0px;
 }
 
-.less-talk__container {
+&__container {
     display: flex;
-    padding-top: 60px;
+    padding-top: 0px;
     gap: 40px;
     margin: 0;
+
+@media screen and (min-width: $bp-tablet) {
+    padding-top: 60px;
+}
 }
 
-.less-talk__left {
+&__dog-background {
+    display: none;
+
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
+}
+&__dog {
+    display: none;
+
+@media screen and (min-width: $bp-tablet) {
+    display: block;
+}
+}
+&__left {
     display: flex;
 }
 
-.less-talk__laps {
+&__laps {
     position: relative;
 }
 
-.less-talk__dog {
+&__dog {
     position: absolute;
     top: 1060px;
     border: 0;
 }
 
-.less-talk__lap1 {
+&__lap1 {
+    display: none;
     position: absolute;
     fill: var(--color-brand-grey);
     right: 390px;
     top: 340px;
+
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
 }
 
-.less-talk__lap2 {
+&__lap2 {
+    display: none;
     position: absolute;
     fill: var(--color-brand-grey);
     right: 280px;
     top: 60px;
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
 }
 
-.less-talk__lap3 {
+&__lap3 {
+    display: none;
     position: absolute;
     fill: var(--color-brand-grey);
     top: 260px;
     left: -80px;
+
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
 }
 
-.less-talk__video-button {
+&__video-button {
     position: absolute;
-    left: -200px;
-    top: 40px;
+    transform: translate(220px, 382px);
     width: 162px;
-    height: 124px;
+    height: 122px;
     background-repeat: no-repeat;
     background-image: url(../images/video.png);
     background-color: transparent;
     border: 0;
+    
+@media screen and (min-width: $bp-tablet) {
+    width: 162px;
+    height: 124px;
+    left: -200px;
+    top: 40px;
     animation: moveUp 1s infinite alternate;
 }
-
-.less-talk__video-button:hover {
+}
+&__video-button:hover {
     cursor: pointer;
 }
 
-.less-talk__right {
+&__right {
     margin-top: 50px;
 }
 
-.section-title {
-    font-family: "Rowdies", sans-serif;
+&__title {
+    font-family: 'Rowdies', sans-serif;
     font-weight: 400;
+    font-size: 36px;
+
+@media screen and (min-width: $bp-tablet) {
     font-size: 56px;
 }
+    
+}
 
-.less-talk-text {
+&__text {
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
+
+@media screen and (min-width: $bp-tablet) {
+        font-size: 22px;
+}
+}
 }

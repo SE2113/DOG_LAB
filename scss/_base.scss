@@ -4,17 +4,13 @@ body {
     font-family: "Roboto", sans-serif;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-position: center top;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    /*overflow-x: hidden;*/
-    width: 100%;
-    max-width: 1278px;
-    margin: 0 auto;
-    padding: 0 24px;
-    box-sizing: border-box;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

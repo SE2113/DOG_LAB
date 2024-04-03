@@ -1,24 +1,31 @@
 .category-section {
+    padding-top: 42px;
+    margin: 24px 0 0 0;
+
+@media screen and (min-width: $bp-tablet) {
     padding-top: 32px;
-    margin: 0;
 }
 
-.category-section__content {
+&__conteiner {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 24px;
 }
 
-.category-section__catigory-title {
+&__catigory-title {
     text-align: center;
     font-family: "Rowdies", sans-serif;
     font-weight: 400;
     justify-content: center;
+    font-size: 36px;
+
+@media screen and (min-width: $bp-tablet) {
     font-size: 56px;
 }
+}
 
-.category-section__list {
+&__list {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -26,7 +33,7 @@
     padding: 0;
 }
 
-.category-section__card {
+&__card {
     display: flex;
     padding: 48px;
     justify-content: center;
@@ -34,35 +41,50 @@
     box-sizing: border-box;
 }
 
-.category-section__item {
+&__mobile {
+    display: none;
+
+@media screen and (min-width: $bp-desktop) {
+    display: flex;
+}
+}
+&__item {
     list-style: none;
-    width: 240px;
-    height: 240px;
+    width: 280px;
+    height: 280px;
     border-radius: 16px;
     background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
     box-shadow: 0px 4px 4px 0px rgba(24, 24, 23, 0.05);
     cursor: pointer;
+
+@media screen and (min-width: $bp-desktop) {
+    width: 240px;
+    height: 240px;
+}
 }
 
-.category-section__link {
-    text-decoration: none;
-    font-size: 22px;
-    color: var(--color-brand);
-}
-
-.category-section__button {
+&__button {
     position: relative;
 }
 
-.category-section__but {
+&__bnt {
     color: var(--color-brand);
     text-decoration: none;
     letter-spacing: 0.9px;
     line-height: 1.3;
     font-size: 18px;
+    position: absolute;
+    transform: translate(-240px, 10px);
+    white-space: nowrap;
+
+@media screen and (min-width: $bp-desktop) {
+    position: relative;
+    transform: translate(-220px, 10px);
+    white-space: nowrap;
+}
 }
 
-.category-section__but::after {
+&__bnt::after {
     box-sizing: border-box;
     position: absolute;
     width: 40px;
@@ -70,4 +92,11 @@
     background-image: url(../images/arrow1.png);
     content: "";
     transform: translate(20%, 25%);
+}
+
+&__link {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--color-brand);
+}
 }

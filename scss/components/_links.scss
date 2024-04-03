@@ -1,0 +1,15 @@
+.link {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 2;
+    color: #181817;
+    list-style-type: none;
+}
+
+.link:hover {
+    color: var(--color-brand);
+    font-weight: 700;
+}

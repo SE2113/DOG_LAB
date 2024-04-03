@@ -1,0 +1,28 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    padding: 24px;
+
+&.is-open {
+        transform: translateX(0);
+    }
+
+&__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 64px;
+    }
+
+&__close-icon {
+    border: none;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    }
+}

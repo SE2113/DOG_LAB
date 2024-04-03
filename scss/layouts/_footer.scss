@@ -1,51 +1,88 @@
 .footer-section {
     background-color: #fffaf3;
-    margin-top: 90px;
-}
+    margin-top: 168px;
 
-.footer-section__container {
+&__container {
+    position: relative;
     padding-top: 32px;
     margin-top: 60px;
+    display: block;
+    height: 260px;
+
+@media screen and (min-width: $bp-tablet) {
     display: flex;
     justify-content: space-around;
-    /* background-color: #fffaf3; */
-    height: 260px;
+}
 }
 
-.footer-section__container::after {
-    content: "";
-    background-image: url(../images/footer-dog.png);
-    width: 292px;
-    height: 304px;
+&__logo {
+    display: flex;
+    justify-content: center;
+
+@media screen and (min-width: $bp-tablet) {
+    display: block;
+}
+}
+&__social-list {
+    display: flex;
+    justify-content: center;
+
+@media screen and (min-width: $bp-tablet) {
+    justify-content: flex-start;
+}
+    
 }
 
-.footer-section__social {
+&__menu {
+    padding: 0;
+    text-align: center;
+
+@media screen and (min-width: $bp-tablet) {
+    text-align: start;
+}
+}
+
+&__social {
+    display: none;
     border: none;
     fill: var(--color-brand-light);
     background-color: transparent;
     padding-top: 28px;
+
+@media screen and (min-width: $bp-tablet) {
+    display: flex;
+}
 }
 
-.footer-menu {
-    padding: 0;
+&__social-mobile {
+    display: flex;
+    border: none;
+    fill: var(--color-brand-light);
+    background-color: transparent;
+    padding: 24px;
+
+@media screen and (min-width: $bp-tablet) {
+        display: none;
+    }
 }
 
-.footer-menu__list {
-    list-style: none;
-}
+&__container::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/footer-dog.png);
+    width: 292px;
+    height: 304px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    transform: translate(140px, -694px);
+    
 
-.footer-menu__link {
-    font-family: "Roboto", sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    line-height: 2;
+@media screen and (min-width: $bp-tablet) {
+    position: relative;
+    background-size: 100%;
+    transform: translate(0px, 0px);
 }
-
-.footer-menu__link:hover {
-    color: var(--color-brand);
-    font-weight: 700;
+}
 }
 
 .footer__input {
@@ -57,13 +94,14 @@
     padding: 4px;
     color: var(--color-brand);
     border-radius: 8px;
+
+    &::placeholder {
+        color: var(--color-brand);
+        }
+    
+    &:focus {
+        outline: none;
+        border-color: var(--color-brand);
+        }
 }
 
-.footer__input::placeholder {
-    color: var(--color-brand);
-}
-
-.footer__input:focus {
-    outline: none;
-    border-color: var(--color-brand);
-}
