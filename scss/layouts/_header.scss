@@ -16,7 +16,8 @@ width: 94px;
     display: flex;
     gap: 20px;
     padding: 20px 20px 0;
-        }
+    align-items: center;
+}
 &__nav {
     display: flex;
     flex-grow: 1;

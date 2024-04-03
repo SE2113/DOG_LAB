@@ -9,7 +9,7 @@
     display: block;
     height: 260px;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     display: flex;
     justify-content: space-around;
 }
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     display: block;
 }
 }
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     justify-content: flex-start;
 }
     
@@ -37,7 +37,7 @@
     padding: 0;
     text-align: center;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     text-align: start;
 }
 }
@@ -49,7 +49,7 @@
     background-color: transparent;
     padding-top: 28px;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     display: flex;
 }
 }
@@ -61,7 +61,7 @@
     background-color: transparent;
     padding: 24px;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
         display: none;
     }
 }
@@ -69,15 +69,16 @@
 &__container::after {
     position: absolute;
     content: "";
-    background-image: url(../images/footer-dog.png);
+    background-image: url(../images/page2/footer-dog-nut.png);
+    background-position: center top;
     width: 292px;
     height: 304px;
-    background-size: 50%;
     background-repeat: no-repeat;
-    transform: translate(140px, -694px);
+    transform: translate(20px, -692px);
     
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
+    background-image: url(../images/footer-dog.png);
     position: relative;
     background-size: 100%;
     transform: translate(0px, 0px);

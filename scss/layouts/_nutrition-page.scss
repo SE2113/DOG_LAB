@@ -54,7 +54,6 @@ margin: -2px;
     justify-content: center;
     list-style-type: none;
     flex-wrap: wrap;
-    gap: 40px;
 
 @media screen and (min-width: $bp-tablet) {
     gap: 0px;
@@ -63,7 +62,11 @@ margin: -2px;
 
 &__item {
     flex-basis: calc((100% - 96px) / 5);
+    padding: 10px;
+
+@media screen and (min-width: $bp-tablet) {
     padding: 20px;
+}
 }
 
 &__info {

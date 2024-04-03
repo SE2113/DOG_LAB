@@ -10,7 +10,7 @@
     justify-content: center;
     font-size: 36px;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     font-size: 56px;
     padding-top: 20px;
 }
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     display: flex;
 }
 }
@@ -39,9 +39,9 @@
 &__list {
     text-decoration: none;
     list-style: none;
-    margin-left: 38px;
+    // margin-left: 38px;
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
     margin: 0;
 }
 }

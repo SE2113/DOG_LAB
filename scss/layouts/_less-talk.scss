@@ -31,7 +31,11 @@
 }
 }
 &__left {
+    display: none;
+
+@media screen and (min-width: $bp-tablet) {
     display: flex;
+}
 }
 
 &__laps {
@@ -80,6 +84,7 @@
 }
 
 &__video-button {
+    display: none;
     position: absolute;
     transform: translate(220px, 382px);
     width: 162px;
