@@ -22,15 +22,43 @@
         display: none;
     }
 }
-&__popular {
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 18px;
+
+&__mobile-sorting {
+    display: flex;
+    align-items: center;
 }
 
 &__popular-arrows {
  fill: var(--color-brand);
 margin: -2px;
+}
+
+&__popular {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 12px;
+}
+
+&__sort-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-brand);
+    margin-right: 38px;
+}
+
+&__sort-item {
+    color: black;
+}
+&__sort-item:hover {
+    color: var(--color-brand);
+}
+
+&__popular-bnt {
+    padding: 2px;
+    border: none;
+    background-color: transparent;
 }
 
 &__sorting {

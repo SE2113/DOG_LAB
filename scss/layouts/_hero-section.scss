@@ -79,7 +79,7 @@
 }
 
 .small-dog {
-    display: none;
+    // display: none;
     position: relative;
 
 &__dog {
@@ -94,7 +94,7 @@
 }
 
 &__tax-dog {
-transform: translate(200px, 10px);
+transform: translate(160px, 18px);
 @media screen and (min-width: $bp-tablet) {
     top: -580px;
     left: -60px;
@@ -103,7 +103,7 @@ transform: translate(200px, 10px);
 }
 
 &__bw-gog {
-    transform: translate(90px, -38px);
+    transform: translate(52px, -38px);
 
 @media screen and (min-width: $bp-tablet){
     bottom: 180px;
@@ -112,7 +112,7 @@ transform: translate(200px, 10px);
 }
 
 &__w-dog {
-    transform: translate(330px, -38px);
+    transform: translate(276px, -38px);
 @media screen and (min-width: $bp-tablet) {
     right: 320px;
     bottom: 420px;
@@ -124,7 +124,7 @@ transform: translate(200px, 10px);
     height: 24px;
     position: absolute;
     fill: var(--color-brand-light);
-    transform: translate(128px, 20px);
+    transform: translate(60px, 8px);
 
 @media screen and (min-width: $bp-tablet) {
     width: 42px;
@@ -140,7 +140,7 @@ transform: translate(200px, 10px);
     height: 24px;
     position: absolute;
     fill: #ff6e9f;
-    transform: translate(288px, 14px);
+    transform: translate(248px, 14px);
     
 
 @media screen and (min-width: $bp-tablet) {
@@ -158,7 +158,7 @@ transform: translate(200px, 10px);
     width: 24px;
     height: 24px;
     fill: #d9a6ff;
-    transform: translate(358px, -152px);
+    transform: translate(318px, -142px);
 
 @media screen and (min-width: $bp-tablet) {
     width: 42px;
